@@ -60,6 +60,7 @@
 		F3FE78B91DBFDD7400DBB247 /* CLP_NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_NetworkManager.m; sourceTree = "<group>"; };
 		F3FE78BB1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_FetchTicketsOperation.h; sourceTree = "<group>"; };
 		F3FE78BC1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_FetchTicketsOperation.m; sourceTree = "<group>"; };
+		F3FE78BF1DBFE77100DBB247 /* CLP_Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 			children = (
 				8327014A19B607D500AF50E7 /* CLPAppDelegate.h */,
 				8327014B19B607D500AF50E7 /* CLPAppDelegate.m */,
+				F3FE78BF1DBFE77100DBB247 /* CLP_Constants.h */,
 				8327014D19B607D500AF50E7 /* Images.xcassets */,
 				8327014219B607D500AF50E7 /* Supporting Files */,
 				8327016A19B6087400AF50E7 /* CLP_MainViewController.h */,

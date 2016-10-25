@@ -7,12 +7,15 @@
 //
 
 #import "CLP_FetchTicketsOperation.h"
+#import "CLP_Constants.h"
 
 @implementation CLP_FetchTicketsOperation
 
 - (void) main {
     
+    NSURLSession *session = [NSURLSession sharedSession];
     
+
 }
 
 @end
