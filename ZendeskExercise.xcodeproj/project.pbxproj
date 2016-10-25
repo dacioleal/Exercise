@@ -21,6 +21,8 @@
 		8327016119B607D500AF50E7 /* ZendeskExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016019B607D500AF50E7 /* ZendeskExerciseTests.m */; };
 		8327016C19B6087400AF50E7 /* CLP_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016B19B6087400AF50E7 /* CLP_MainViewController.m */; };
 		8327016F19B60AF700AF50E7 /* CLP_TicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016E19B60AF700AF50E7 /* CLP_TicketTableViewController.m */; };
+		F3FE78BA1DBFDD7400DBB247 /* CLP_NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FE78B91DBFDD7400DBB247 /* CLP_NetworkManager.m */; };
+		F3FE78BD1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FE78BC1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		8327016B19B6087400AF50E7 /* CLP_MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_MainViewController.m; sourceTree = "<group>"; };
 		8327016D19B60AF700AF50E7 /* CLP_TicketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_TicketTableViewController.h; sourceTree = "<group>"; };
 		8327016E19B60AF700AF50E7 /* CLP_TicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketTableViewController.m; sourceTree = "<group>"; };
+		F3FE78B81DBFDD7400DBB247 /* CLP_NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_NetworkManager.h; sourceTree = "<group>"; };
+		F3FE78B91DBFDD7400DBB247 /* CLP_NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_NetworkManager.m; sourceTree = "<group>"; };
+		F3FE78BB1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_FetchTicketsOperation.h; sourceTree = "<group>"; };
+		F3FE78BC1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_FetchTicketsOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,8 @@
 				8327016B19B6087400AF50E7 /* CLP_MainViewController.m */,
 				8327016D19B60AF700AF50E7 /* CLP_TicketTableViewController.h */,
 				8327016E19B60AF700AF50E7 /* CLP_TicketTableViewController.m */,
+				F3FE78BE1DBFDFD500DBB247 /* Model */,
+				F3FE78B71DBFDCEA00DBB247 /* Network */,
 			);
 			path = ZendeskExercise;
 			sourceTree = "<group>";
@@ -152,6 +160,24 @@
 				8327015D19B607D500AF50E7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3FE78B71DBFDCEA00DBB247 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F3FE78B81DBFDD7400DBB247 /* CLP_NetworkManager.h */,
+				F3FE78B91DBFDD7400DBB247 /* CLP_NetworkManager.m */,
+				F3FE78BB1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.h */,
+				F3FE78BC1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		F3FE78BE1DBFDFD500DBB247 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3FE78BA1DBFDD7400DBB247 /* CLP_NetworkManager.m in Sources */,
 				8327016C19B6087400AF50E7 /* CLP_MainViewController.m in Sources */,
+				F3FE78BD1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.m in Sources */,
 				8327014C19B607D500AF50E7 /* CLPAppDelegate.m in Sources */,
 				8327014819B607D500AF50E7 /* main.m in Sources */,
 				8327016F19B60AF700AF50E7 /* CLP_TicketTableViewController.m in Sources */,
