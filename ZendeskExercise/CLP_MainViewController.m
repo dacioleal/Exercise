@@ -60,6 +60,7 @@
 }
 
 
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -71,7 +72,6 @@
 {
     return [self.ticketManager numberOfTickets];
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -86,6 +86,7 @@
     [cell configureCellWithTitle:ticket.title andDescription:ticket.descriptionText];
     return cell;
 }
+
 
 
 #pragma mark - TableView delegate

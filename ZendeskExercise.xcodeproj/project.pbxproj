@@ -21,6 +21,7 @@
 		8327016119B607D500AF50E7 /* ZendeskExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016019B607D500AF50E7 /* ZendeskExerciseTests.m */; };
 		8327016C19B6087400AF50E7 /* CLP_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016B19B6087400AF50E7 /* CLP_MainViewController.m */; };
 		F319C8CE1DC3BCF9001A0927 /* CLP_TicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F319C8CD1DC3BCF9001A0927 /* CLP_TicketCell.m */; };
+		F389AA871DC3DBAC00ACBFDE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389AA861DC3DBAC00ACBFDE /* Launch Screen.storyboard */; };
 		F3E0499C1DC12E780026BDB1 /* CLP_Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E0499B1DC12E780026BDB1 /* CLP_Ticket.m */; };
 		F3E0499F1DC133140026BDB1 /* CLP_TicketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E0499E1DC133140026BDB1 /* CLP_TicketManager.m */; };
 		F3FE78BA1DBFDD7400DBB247 /* CLP_NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FE78B91DBFDD7400DBB247 /* CLP_NetworkManager.m */; };
@@ -58,6 +59,7 @@
 		8327016B19B6087400AF50E7 /* CLP_MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_MainViewController.m; sourceTree = "<group>"; };
 		F319C8CC1DC3BCF9001A0927 /* CLP_TicketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_TicketCell.h; sourceTree = "<group>"; };
 		F319C8CD1DC3BCF9001A0927 /* CLP_TicketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketCell.m; sourceTree = "<group>"; };
+		F389AA861DC3DBAC00ACBFDE /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F3E0499A1DC12E780026BDB1 /* CLP_Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_Ticket.h; sourceTree = "<group>"; };
 		F3E0499B1DC12E780026BDB1 /* CLP_Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_Ticket.m; sourceTree = "<group>"; };
 		F3E0499D1DC133140026BDB1 /* CLP_TicketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_TicketManager.h; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		8327012F19B607D500AF50E7 = {
 			isa = PBXGroup;
 			children = (
+				F389AA861DC3DBAC00ACBFDE /* Launch Screen.storyboard */,
 				8327014119B607D500AF50E7 /* ZendeskExercise */,
 				8327015A19B607D500AF50E7 /* ZendeskExerciseTests */,
 				8327013A19B607D500AF50E7 /* Frameworks */,
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F389AA871DC3DBAC00ACBFDE /* Launch Screen.storyboard in Resources */,
 				8327014619B607D500AF50E7 /* InfoPlist.strings in Resources */,
 				8327014E19B607D500AF50E7 /* Images.xcassets in Resources */,
 			);

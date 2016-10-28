@@ -15,7 +15,10 @@
     
     // Set root view controller of application
     UIViewController *mainViewController = [[CLP_MainViewController alloc]init];
-    self.window.rootViewController = mainViewController;
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    navController.navigationBarHidden = YES;
+    self.window.rootViewController = navController;
+    
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
