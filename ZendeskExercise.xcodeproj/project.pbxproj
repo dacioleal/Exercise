@@ -20,7 +20,9 @@
 		8327015F19B607D500AF50E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8327015D19B607D500AF50E7 /* InfoPlist.strings */; };
 		8327016119B607D500AF50E7 /* ZendeskExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016019B607D500AF50E7 /* ZendeskExerciseTests.m */; };
 		8327016C19B6087400AF50E7 /* CLP_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016B19B6087400AF50E7 /* CLP_MainViewController.m */; };
-		8327016F19B60AF700AF50E7 /* CLP_TicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016E19B60AF700AF50E7 /* CLP_TicketTableViewController.m */; };
+		F319C8CE1DC3BCF9001A0927 /* CLP_TicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F319C8CD1DC3BCF9001A0927 /* CLP_TicketCell.m */; };
+		F3E0499C1DC12E780026BDB1 /* CLP_Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E0499B1DC12E780026BDB1 /* CLP_Ticket.m */; };
+		F3E0499F1DC133140026BDB1 /* CLP_TicketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E0499E1DC133140026BDB1 /* CLP_TicketManager.m */; };
 		F3FE78BA1DBFDD7400DBB247 /* CLP_NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FE78B91DBFDD7400DBB247 /* CLP_NetworkManager.m */; };
 		F3FE78BD1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FE78BC1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.m */; };
 /* End PBXBuildFile section */
@@ -54,8 +56,12 @@
 		8327016019B607D500AF50E7 /* ZendeskExerciseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZendeskExerciseTests.m; sourceTree = "<group>"; };
 		8327016A19B6087400AF50E7 /* CLP_MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_MainViewController.h; sourceTree = "<group>"; };
 		8327016B19B6087400AF50E7 /* CLP_MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_MainViewController.m; sourceTree = "<group>"; };
-		8327016D19B60AF700AF50E7 /* CLP_TicketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_TicketTableViewController.h; sourceTree = "<group>"; };
-		8327016E19B60AF700AF50E7 /* CLP_TicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketTableViewController.m; sourceTree = "<group>"; };
+		F319C8CC1DC3BCF9001A0927 /* CLP_TicketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_TicketCell.h; sourceTree = "<group>"; };
+		F319C8CD1DC3BCF9001A0927 /* CLP_TicketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketCell.m; sourceTree = "<group>"; };
+		F3E0499A1DC12E780026BDB1 /* CLP_Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_Ticket.h; sourceTree = "<group>"; };
+		F3E0499B1DC12E780026BDB1 /* CLP_Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_Ticket.m; sourceTree = "<group>"; };
+		F3E0499D1DC133140026BDB1 /* CLP_TicketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_TicketManager.h; sourceTree = "<group>"; };
+		F3E0499E1DC133140026BDB1 /* CLP_TicketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketManager.m; sourceTree = "<group>"; };
 		F3FE78B81DBFDD7400DBB247 /* CLP_NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_NetworkManager.h; sourceTree = "<group>"; };
 		F3FE78B91DBFDD7400DBB247 /* CLP_NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_NetworkManager.m; sourceTree = "<group>"; };
 		F3FE78BB1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_FetchTicketsOperation.h; sourceTree = "<group>"; };
@@ -127,8 +133,7 @@
 				8327014219B607D500AF50E7 /* Supporting Files */,
 				8327016A19B6087400AF50E7 /* CLP_MainViewController.h */,
 				8327016B19B6087400AF50E7 /* CLP_MainViewController.m */,
-				8327016D19B60AF700AF50E7 /* CLP_TicketTableViewController.h */,
-				8327016E19B60AF700AF50E7 /* CLP_TicketTableViewController.m */,
+				F319C8C81DC3BC1A001A0927 /* View */,
 				F3FE78BE1DBFDFD500DBB247 /* Model */,
 				F3FE78B71DBFDCEA00DBB247 /* Network */,
 			);
@@ -164,6 +169,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F319C8C81DC3BC1A001A0927 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F319C8CC1DC3BCF9001A0927 /* CLP_TicketCell.h */,
+				F319C8CD1DC3BCF9001A0927 /* CLP_TicketCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		F3FE78B71DBFDCEA00DBB247 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +192,10 @@
 		F3FE78BE1DBFDFD500DBB247 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F3E0499D1DC133140026BDB1 /* CLP_TicketManager.h */,
+				F3E0499E1DC133140026BDB1 /* CLP_TicketManager.m */,
+				F3E0499A1DC12E780026BDB1 /* CLP_Ticket.h */,
+				F3E0499B1DC12E780026BDB1 /* CLP_Ticket.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -279,11 +297,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3FE78BA1DBFDD7400DBB247 /* CLP_NetworkManager.m in Sources */,
+				F319C8CE1DC3BCF9001A0927 /* CLP_TicketCell.m in Sources */,
 				8327016C19B6087400AF50E7 /* CLP_MainViewController.m in Sources */,
 				F3FE78BD1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.m in Sources */,
+				F3E0499F1DC133140026BDB1 /* CLP_TicketManager.m in Sources */,
+				F3E0499C1DC12E780026BDB1 /* CLP_Ticket.m in Sources */,
 				8327014C19B607D500AF50E7 /* CLPAppDelegate.m in Sources */,
 				8327014819B607D500AF50E7 /* main.m in Sources */,
-				8327016F19B60AF700AF50E7 /* CLP_TicketTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +426,7 @@
 				INFOPLIST_FILE = "ZendeskExercise/ZendeskExercise-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zendesk.exercise.refactor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -420,6 +441,7 @@
 				INFOPLIST_FILE = "ZendeskExercise/ZendeskExercise-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zendesk.exercise.refactor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

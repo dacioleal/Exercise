@@ -10,6 +10,7 @@
 
 @interface CLP_NetworkManager : NSObject
 
++ (instancetype) sharedManager;
 - (void) fetchTicketsFromServerWithCompletionBlock:(void (^)(void)) completionBlock;
 
 @end

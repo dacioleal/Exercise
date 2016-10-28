@@ -17,7 +17,7 @@
 
 @implementation CLP_NetworkManager
 
-+(instancetype) sharedManager {
++ (instancetype) sharedManager {
     
     static dispatch_once_t onceToken;
     static CLP_NetworkManager *sharedInstance = nil;
