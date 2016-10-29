@@ -19,7 +19,7 @@
 		8327015719B607D500AF50E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8327013F19B607D500AF50E7 /* UIKit.framework */; };
 		8327015F19B607D500AF50E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8327015D19B607D500AF50E7 /* InfoPlist.strings */; };
 		8327016119B607D500AF50E7 /* ZendeskExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016019B607D500AF50E7 /* ZendeskExerciseTests.m */; };
-		8327016C19B6087400AF50E7 /* CLP_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016B19B6087400AF50E7 /* CLP_MainViewController.m */; };
+		8327016C19B6087400AF50E7 /* CLP_TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016B19B6087400AF50E7 /* CLP_TicketsViewController.m */; };
 		F319C8CE1DC3BCF9001A0927 /* CLP_TicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F319C8CD1DC3BCF9001A0927 /* CLP_TicketCell.m */; };
 		F389AA871DC3DBAC00ACBFDE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389AA861DC3DBAC00ACBFDE /* Launch Screen.storyboard */; };
 		F3E0499C1DC12E780026BDB1 /* CLP_Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E0499B1DC12E780026BDB1 /* CLP_Ticket.m */; };
@@ -55,8 +55,8 @@
 		8327015C19B607D500AF50E7 /* ZendeskExerciseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZendeskExerciseTests-Info.plist"; sourceTree = "<group>"; };
 		8327015E19B607D500AF50E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8327016019B607D500AF50E7 /* ZendeskExerciseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZendeskExerciseTests.m; sourceTree = "<group>"; };
-		8327016A19B6087400AF50E7 /* CLP_MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_MainViewController.h; sourceTree = "<group>"; };
-		8327016B19B6087400AF50E7 /* CLP_MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_MainViewController.m; sourceTree = "<group>"; };
+		8327016A19B6087400AF50E7 /* CLP_TicketsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_TicketsViewController.h; sourceTree = "<group>"; };
+		8327016B19B6087400AF50E7 /* CLP_TicketsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketsViewController.m; sourceTree = "<group>"; };
 		F319C8CC1DC3BCF9001A0927 /* CLP_TicketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_TicketCell.h; sourceTree = "<group>"; };
 		F319C8CD1DC3BCF9001A0927 /* CLP_TicketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketCell.m; sourceTree = "<group>"; };
 		F389AA861DC3DBAC00ACBFDE /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 				F3FE78BF1DBFE77100DBB247 /* CLP_Constants.h */,
 				8327014D19B607D500AF50E7 /* Images.xcassets */,
 				8327014219B607D500AF50E7 /* Supporting Files */,
-				8327016A19B6087400AF50E7 /* CLP_MainViewController.h */,
-				8327016B19B6087400AF50E7 /* CLP_MainViewController.m */,
+				8327016A19B6087400AF50E7 /* CLP_TicketsViewController.h */,
+				8327016B19B6087400AF50E7 /* CLP_TicketsViewController.m */,
 				F319C8C81DC3BC1A001A0927 /* View */,
 				F3FE78BE1DBFDFD500DBB247 /* Model */,
 				F3FE78B71DBFDCEA00DBB247 /* Network */,
@@ -302,7 +302,7 @@
 			files = (
 				F3FE78BA1DBFDD7400DBB247 /* CLP_NetworkManager.m in Sources */,
 				F319C8CE1DC3BCF9001A0927 /* CLP_TicketCell.m in Sources */,
-				8327016C19B6087400AF50E7 /* CLP_MainViewController.m in Sources */,
+				8327016C19B6087400AF50E7 /* CLP_TicketsViewController.m in Sources */,
 				F3FE78BD1DBFDF0B00DBB247 /* CLP_FetchTicketsOperation.m in Sources */,
 				F3E0499F1DC133140026BDB1 /* CLP_TicketManager.m in Sources */,
 				F3E0499C1DC12E780026BDB1 /* CLP_Ticket.m in Sources */,

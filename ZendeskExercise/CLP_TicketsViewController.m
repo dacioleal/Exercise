@@ -3,21 +3,21 @@
 //  Zendesk Exercise
 //
 
-#import "CLP_MainViewController.h"
+#import "CLP_TicketsViewController.h"
 #import "CLP_NetworkManager.h"
 #import "CLP_TicketManager.h"
 #import "CLP_TicketCell.h"
 #import "CLP_Ticket.h"
 #import "CLP_Constants.h"
 
-@interface CLP_MainViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface CLP_TicketsViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) CLP_TicketManager *ticketManager;
 
 @end
 
-@implementation CLP_MainViewController
+@implementation CLP_TicketsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

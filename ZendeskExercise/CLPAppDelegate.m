@@ -4,7 +4,7 @@
 //
 
 #import "CLPAppDelegate.h"
-#import "CLP_MainViewController.h"
+#import "CLP_TicketsViewController.h"
 
 
 @implementation CLPAppDelegate
@@ -14,10 +14,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Set root view controller of application
-    UIViewController *mainViewController = [[CLP_MainViewController alloc]init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
-    navController.navigationBarHidden = YES;
-    self.window.rootViewController = navController;
+    UIViewController *ticketsViewController = [[CLP_TicketsViewController alloc]init];
+    self.window.rootViewController = ticketsViewController;
     
     
     // Override point for customization after application launch.

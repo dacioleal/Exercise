@@ -5,6 +5,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CLP_MainViewController : UIViewController
+@interface CLP_TicketsViewController : UIViewController
 
 @end
