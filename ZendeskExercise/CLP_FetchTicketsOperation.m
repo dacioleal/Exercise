@@ -53,6 +53,7 @@
 - (void) parseTicketsFromDictionary:(NSDictionary *) dict {
     
     CLP_TicketManager *ticketManager = [CLP_TicketManager manager];
+    [ticketManager removeAllTickets];
     NSArray *tickets = [dict valueForKey:@"tickets"];
     
     for (NSDictionary *ticketDict in tickets) {
@@ -67,7 +68,6 @@
         CLP_Ticket *ticket = [[CLP_Ticket alloc] initWithIdentifier:identifierValue AndTitle:title AndDescription:descriptionText];
         [ticketManager addTicket:ticket];
     }
-    NSLog(@"Fetched tickets");
 }
 
 @end

@@ -17,6 +17,7 @@
 - (void) addTicket:(CLP_Ticket *)ticket;
 - (CLP_Ticket *) ticketAtIndex:(NSUInteger)index;
 - (NSInteger) numberOfTickets;
+- (void) removeAllTickets;
 
 - (void) fetchTicketsWithCompletionBlock:(void (^)(void))completionBlock;
 

@@ -47,6 +47,10 @@
     return self.tickets.count;
 }
 
+- (void) removeAllTickets {
+    [self.tickets removeAllObjects];
+}
+
 #pragma mark - Fetch tickets
 
 - (void) fetchTicketsWithCompletionBlock:(void (^)(void))completionBlock {
