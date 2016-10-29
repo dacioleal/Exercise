@@ -7,4 +7,6 @@
 
 @interface CLP_TicketsViewController : UIViewController
 
+- (void) fetchTickets;
+
 @end

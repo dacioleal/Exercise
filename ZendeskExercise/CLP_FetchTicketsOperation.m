@@ -64,6 +64,7 @@
     }
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"ZendeskTicketDataRefreshed" object:nil];
+    NSLog(@"Fetched tickets");
 }
 
 @end

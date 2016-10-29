@@ -45,9 +45,7 @@
     [super viewDidLoad];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    
-    self.ticketManager = [CLP_TicketManager manager];
-    [self.ticketManager fetchTickets];
+    [self fetchTickets];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -102,6 +100,13 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.tableView reloadData];
     });
+}
+
+#pragma mark - Fetch
+
+- (void) fetchTickets {
+    self.ticketManager = [CLP_TicketManager manager];
+    [self.ticketManager fetchTickets];
 }
 
 
