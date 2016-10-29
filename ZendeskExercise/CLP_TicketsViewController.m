@@ -63,7 +63,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellIdentifier = @"TicketCell";
+    static NSString *cellIdentifier = @"TicketCell";
     CLP_TicketCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     if (cell == nil) {
