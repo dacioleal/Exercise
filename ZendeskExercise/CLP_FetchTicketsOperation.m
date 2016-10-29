@@ -28,6 +28,8 @@
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
     [request setValue:authValue forHTTPHeaderField:@"Authorization"];
     
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
     NSURLSessionDataTask *sessionDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
@@ -39,9 +41,12 @@
         }
         
         error ? NSLog(@"Error: %@", error.description) : nil;
+        dispatch_semaphore_signal(semaphore);
     }];
 
     [sessionDataTask resume];
+    
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
 }
 
 
@@ -62,8 +67,6 @@
         CLP_Ticket *ticket = [[CLP_Ticket alloc] initWithIdentifier:identifierValue AndTitle:title AndDescription:descriptionText];
         [ticketManager addTicket:ticket];
     }
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"ZendeskTicketDataRefreshed" object:nil];
     NSLog(@"Fetched tickets");
 }
 

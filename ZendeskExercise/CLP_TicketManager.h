@@ -18,6 +18,6 @@
 - (CLP_Ticket *) ticketAtIndex:(NSUInteger)index;
 - (NSInteger) numberOfTickets;
 
-- (void) fetchTickets;
+- (void) fetchTicketsWithCompletionBlock:(void (^)(void))completionBlock;
 
 @end

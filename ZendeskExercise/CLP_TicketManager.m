@@ -49,8 +49,8 @@
 
 #pragma mark - Fetch tickets
 
-- (void) fetchTickets {
-    [[CLP_NetworkManager sharedManager] fetchTicketsFromServerWithCompletionBlock:nil];
+- (void) fetchTicketsWithCompletionBlock:(void (^)(void))completionBlock {
+    [[CLP_NetworkManager sharedManager] fetchTicketsFromServerWithCompletionBlock:completionBlock];
 }
 
 

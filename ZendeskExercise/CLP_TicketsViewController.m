@@ -48,16 +48,6 @@
     [self fetchTickets];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView) name:@"ZendeskTicketDataRefreshed" object:nil];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"ZendeskTicketDataRefreshed" object:nil];
-}
-
-
 
 #pragma mark - Table view data source
 
@@ -94,19 +84,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-#pragma mark - Reload
-
-- (void)reloadTableView {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.tableView reloadData];
-    });
-}
 
 #pragma mark - Fetch
 
 - (void) fetchTickets {
     self.ticketManager = [CLP_TicketManager manager];
-    [self.ticketManager fetchTickets];
+    [self.ticketManager fetchTicketsWithCompletionBlock:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }];
 }
 
 
