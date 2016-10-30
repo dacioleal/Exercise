@@ -21,6 +21,8 @@
 		8327016119B607D500AF50E7 /* ZendeskExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016019B607D500AF50E7 /* ZendeskExerciseTests.m */; };
 		8327016C19B6087400AF50E7 /* CLP_TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8327016B19B6087400AF50E7 /* CLP_TicketsViewController.m */; };
 		F319C8CE1DC3BCF9001A0927 /* CLP_TicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F319C8CD1DC3BCF9001A0927 /* CLP_TicketCell.m */; };
+		F382CF551DC66DAA00987B78 /* CLP_TicketsViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F382CF541DC66DAA00987B78 /* CLP_TicketsViewControllerTests.m */; };
+		F382CF5B1DC6759D00987B78 /* CLP_StubTicketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F382CF5A1DC6759D00987B78 /* CLP_StubTicketManager.m */; };
 		F389AA871DC3DBAC00ACBFDE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F389AA861DC3DBAC00ACBFDE /* Launch Screen.storyboard */; };
 		F3A766201DC52BD9005ACB76 /* CLP_TicketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A7661F1DC52BD9005ACB76 /* CLP_TicketTests.m */; };
 		F3A766221DC52C03005ACB76 /* CLP_TicketManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A766211DC52C03005ACB76 /* CLP_TicketManagerTests.m */; };
@@ -62,6 +64,9 @@
 		8327016B19B6087400AF50E7 /* CLP_TicketsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketsViewController.m; sourceTree = "<group>"; };
 		F319C8CC1DC3BCF9001A0927 /* CLP_TicketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_TicketCell.h; sourceTree = "<group>"; };
 		F319C8CD1DC3BCF9001A0927 /* CLP_TicketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketCell.m; sourceTree = "<group>"; };
+		F382CF541DC66DAA00987B78 /* CLP_TicketsViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketsViewControllerTests.m; sourceTree = "<group>"; };
+		F382CF591DC6759D00987B78 /* CLP_StubTicketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLP_StubTicketManager.h; sourceTree = "<group>"; };
+		F382CF5A1DC6759D00987B78 /* CLP_StubTicketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_StubTicketManager.m; sourceTree = "<group>"; };
 		F389AA861DC3DBAC00ACBFDE /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F3A7661F1DC52BD9005ACB76 /* CLP_TicketTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketTests.m; sourceTree = "<group>"; };
 		F3A766211DC52C03005ACB76 /* CLP_TicketManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLP_TicketManagerTests.m; sourceTree = "<group>"; };
@@ -163,9 +168,12 @@
 			isa = PBXGroup;
 			children = (
 				8327016019B607D500AF50E7 /* ZendeskExerciseTests.m */,
+				F382CF541DC66DAA00987B78 /* CLP_TicketsViewControllerTests.m */,
 				F3A766211DC52C03005ACB76 /* CLP_TicketManagerTests.m */,
 				F3A7661F1DC52BD9005ACB76 /* CLP_TicketTests.m */,
 				F3A766231DC52CA9005ACB76 /* CLP_TicketCellTests.m */,
+				F382CF591DC6759D00987B78 /* CLP_StubTicketManager.h */,
+				F382CF5A1DC6759D00987B78 /* CLP_StubTicketManager.m */,
 				8327015B19B607D500AF50E7 /* Supporting Files */,
 			);
 			path = ZendeskExerciseTests;
@@ -333,9 +341,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8327016119B607D500AF50E7 /* ZendeskExerciseTests.m in Sources */,
+				F382CF5B1DC6759D00987B78 /* CLP_StubTicketManager.m in Sources */,
 				F3A766241DC52CA9005ACB76 /* CLP_TicketCellTests.m in Sources */,
 				F3A766201DC52BD9005ACB76 /* CLP_TicketTests.m in Sources */,
 				F3A766221DC52C03005ACB76 /* CLP_TicketManagerTests.m in Sources */,
+				F382CF551DC66DAA00987B78 /* CLP_TicketsViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

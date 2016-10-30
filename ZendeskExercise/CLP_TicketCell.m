@@ -28,6 +28,8 @@
     
     self.textLabel.text = title;
     self.detailTextLabel.text = descriptionText;
+    self.detailTextLabel.font = [UIFont systemFontOfSize:12.0];
+    self.detailTextLabel.textColor = [UIColor lightGrayColor];
 }
 
 @end

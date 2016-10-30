@@ -12,9 +12,6 @@
 
 @interface CLP_TicketsViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (strong, nonatomic) UITableView *tableView;
-@property (strong, nonatomic) CLP_TicketManager *ticketManager;
-
 @end
 
 @implementation CLP_TicketsViewController

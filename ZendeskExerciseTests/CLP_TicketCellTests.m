@@ -22,7 +22,7 @@
 - (void)setUp {
     [super setUp];
     
-    self.fakeTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 100.0, 100.0) style:UITableViewStylePlain];
+    self.fakeTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 300.0, 300.0) style:UITableViewStylePlain];
     self.fakeTableView.dataSource = self;
     [self.fakeTableView registerClass:[CLP_TicketCell class] forCellReuseIdentifier:@"TicketCell"];
 }
