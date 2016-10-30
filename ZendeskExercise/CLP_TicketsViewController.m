@@ -1,7 +1,11 @@
 //
-//  CLP_MainViewController.m
+//  CLP_TicketsViewController.m
 //  Zendesk Exercise
 //
+//  Created by Dacio Leal Rodriguez on 28/10/16.
+//  Copyright © 2016 Christopher La Pat. All rights reserved.
+//
+
 
 #import "CLP_TicketsViewController.h"
 #import "CLP_NetworkManager.h"
